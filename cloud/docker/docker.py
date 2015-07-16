@@ -1201,7 +1201,7 @@ class DockerManager(object):
                   'command':      self.module.params.get('command'),
                   'ports':        self.exposed_ports,
                   'volumes':      self.volumes,
-                  'mem_limit':    _human_to_bytes(self.module.params.get('memory_limit')),
+                 # 'mem_limit':    _human_to_bytes(self.module.params.get('memory_limit')),
                   'environment':  self.env,
                   'hostname':     self.module.params.get('hostname'),
                   'domainname':   self.module.params.get('domainname'),
